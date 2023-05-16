@@ -1,128 +1,307 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Page d'accueil - Voyage</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CityExplorer - Discover Cities Around the World</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+      margin: 0;
+      padding: 0;
+
+      background-image: url("images/bg.jpg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .header-container {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+    h1 {
+      font-size: 30px;
+      margin: 0;
+    }
+
+    .logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+    .logo img{
+      width: 60px; /* Adjust the width as needed */
+      margin-right: 10px;
+
+}
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #555;
+}
+
+    .hero {
+      padding: 50px;
+      text-align: center;
+      color: #fff;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      opacity: 0.85;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .feature {
+      flex: 1 1 300px;
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      margin: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: #fff;
+    }
+
+    .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.card {
+  text-align: center;
+  flex: 1 1 300px; /* Updated flex shorthand property */
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  opacity: 0.95;
+}
+
+      
+        .card h2 {
+          margin-top: 0;
+        }
+      
+        .card p {
+          margin-bottom: 0;
+        }
+
+        #imgParis{
+
+       width: 300px ;
+      }
+      #imgsidibou{
+
+      width: 800px ;
+}
+
+#imgtokyo{
+
+width: 320px ;
+}
+
+#imgmexico{
+
+width: 600px ;
+}
+
+      .btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  text-decoration: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+  </style>
 </head>
 <body>
   <header>
-    <h1>Decouverte du monde</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Destinations</a></li>
-        <li><a href="#">Voyage</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="header-container">
+      
+      <h1 class="logo">CityExplorer &nbsp;
+        <a href="#" class="logo">
+        <img src="images/logo.jpg" alt="Logo">
+      </a>
+      </h1>  
+
+      <nav>
+
+        <ul>
+          <li><a href="test.html">Home</a></li>
+          <li><a href="#">Explore Cities</a></li>
+          <li><a href="#">Travel Tips</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="contactus/contactus.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   
-  <section id="hero">
-    <div class="hero-content">
-      <h2>Découvrez des paysages incroyables</h2>
-      <p>Partez à l'aventure et explorez des destinations époustouflantes.</p>
-      <a href="#" class="btn">En savoir plus</a>
-    </div>
+
+  <section class="hero">
+    <h2>Uncover the Wonders of Cities Around the World</h2>
+    <p>Welcome to CityExplorer, your gateway to a global adventure. Discover the unique charm, rich history, and cultural treasures of cities across the globe. Join our community of passionate travelers and explore the world like never before.</p>
   </section>
-  
-  <section id="destinations">
-    <h2>Destinations populaires</h2>
-    <div class="destination-card">
-      <img id="imgParis" src="images/photo1.jpg" alt="photo1">
-      <h3>  France </h3>
-      <p>Explorez les merveilles naturelles de la destination 1.</p>
-      <a href="#" class="btn">Découvrir</a>
-    </div>
-    <div class="destination-card">
-      <img src="destination2.jpg" alt="Destination 2">
-      <h3> Mexique </h3>
-      <p>Découvrez les trésors cachés de la destination 2.</p>
-      <a href="#" class="btn">Découvrir</a>
-    </div>
-    <div class="destination-card">
-      <img src="destination3.jpg" alt="Destination 3">
-      <h3>  Japon  </h3>
-      <p>Plongez dans la culture vibrante de la destination 3.</p>
-      <a href="#" class="btn">Découvrir</a>
-    </div>
-  </section>
-  
-  <section id="newsletter">
-    <h2>Inscrivez-vous à notre newsletter</h2>
-    <form>
-      <input type="email" placeholder="Entrez votre adresse e-mail">
-      <button type="submit" class="btn">S'inscrire</button>
 
-    </form>
-    <a href="contactus/contactus.html">  <button id="redirectButton">Contact Us</button> </a>
+  <section class="features">
+    <div class="feature">
+      <h3>Immersive Guides</h3>
+      <p>Delve into detailed city profiles, captivating articles, and stunning visuals that transport you to the heart of each destination. Uncover the hidden gems and must-visit landmarks that make each city truly special
 
-  </section>
-  
-  <footer>
-    <p>&copy; 2023 Voyage. Tous droits réservés.</p>
-  </footer>
-</body>
-</html>
+      </section>
+
+      
+
+      <section class="features">
+        <div class="card-container">
+
+          <div class="card">
+            <h2>Sidi Bou Saïd</h2>
+            <img id="imgsidibou" src="images/sidibou.png" alt="photo1" >
+            <p style="text-align: justify;">Sidi Bou Saïd is a picturesque 
+              coastal village located in Tunisia, known for its enchanting blue
+               and white architecture and stunning views of the Mediterranean Sea.
+                Perched atop a hillside overlooking the Gulf of Tunis.</p>
+
+            <p>Explorez les merveilles naturelles de Sidi Bousaid.</p>
+            <br>
+            <a href="https://guide-voyage-tunisie.com/sidi-bou-said/" class="btn">Découvrir</a>
+          </div>
 
 
-<style>
+          <div class="card">
+            <h2>Paris</h2>
+            <img id="imgParis" src="images/photo1.jpg" alt="photo1" >
+            <p style="text-align: justify;">Paris, the capital city of France, is renowned for its 
+              timeless elegance, rich history, and cultural allure. 
+              Known as the "City of Lights" and a global center for art,
+               fashion, gastronomy, and romance, Paris captivates millions
+                of visitors each year. One of the most recognizable symbols of Paris is the Eiffel Tower,
+                 a towering iron lattice structure that offers breathtaking views of the city. </p>
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
+            <p>Explorez les merveilles naturelles de Paris.</p>
+            <br>
+            <a href="https://www.parisinfo.com/" class="btn">Découvrir</a>
+          </div>
+      
+      
+          <div class="card">
+            <h2>Tokyo</h2>
+            <img id="imgtokyo" src="images/tokyo.jpg" alt="photo1" >
 
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-}
+            <p style="text-align: justify;">Tokyo is the capital and largest city of Japan, located on the eastern 
+              coast of the island of Honshu. It is a vibrant and bustling metropolis 
+              known for its cutting-edge technology, modern architecture, and rich 
+              cultural heritage. Tokyo is a global financial center and a hub for
+               business, fashion, and entertainment.</p>
 
-h1 {
-  margin: 0;
-}
+               <p>Explorez les merveilles naturelles de Tokyo.</p>
+               <br>
+               <a href="https://www.wonderful-japan.com/fr/tokyo/" class="btn">Découvrir</a>
+          </div>
+      
+          <div class="card">
+            <h2>Mexico city</h2>
+            <img id="imgmexico" src="images/mexico.jpg" alt="photo1" >
 
+            <p style="text-align: justify;">Mexico City, the capital of Mexico, is a sprawling
+               metropolis that captivates visitors with its rich history, vibrant culture, and
+                diverse attractions. Situated in the Valley of Mexico, the city is known for its
+                 ancient ruins, colonial architecture, bustling markets, and modern cosmopolitan lifestyle.</p>
+                 <br>
+                 <p>Explorez les merveilles naturelles de Mexico City.</p>
+                 <br>
+                 <a href="https://www.marcovasco.fr/amerique-latine/mexique/activites/tour-de-ville-de-mexico-city.html" class="btn">Découvrir</a>
+          </div>
 
-#imgParis {
-  margin: 0;
-  width: 150px ;
-  
-}
+        </div>
 
-
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 10px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-#hero { 
-
-   background-image: url('hero.jpg');
-  background-size: cover;
-  background-position: center;
-  
-}
- 
-
-</style>
-
-<script>
-  document.getElementById("redirectButton").addEventListener("click", function() {
-    window.location.href = "src/contactus.html"; // Replace with the filename or relative path of your local index page
-  });
-</script>
+      </section>
+      <footer>
+        <section id="newsletter">
+          <h2>Inscrivez-vous à notre newsletter</h2>
+          <form>
+            <input type="email" placeholder="Entrez votre adresse e-mail">
+            <button type="submit" class="btn">S'inscrire</button>
+      
+          </form>      
+        </section>
+        <p>&copy; 2023 DevOps S2 Project Team. Tous droits réservés.</p>
+      </footer>
+    
+      
