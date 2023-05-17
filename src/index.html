@@ -183,7 +183,24 @@ width: 600px ;
   background-color: #0056b3;
 }
 
-
+    .marquee {
+      font-family: "Segoe UI", Arial, sans-serif;
+      font-size: 24px;
+      color: #ffffff;
+      background-color: #333333;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 80%;
+    }
+    
+    @media screen and (max-width: 600px) {
+      .marquee {
+        font-size: 18px;
+        padding: 15px;
+        width: 90%;
+      }
+    }
 
 
 
@@ -202,10 +219,10 @@ width: 600px ;
       <nav>
 
         <ul>
-          <li><a href="test.html">Home</a></li>
-          <li><a href="#">Explore Cities</a></li>
-          <li><a href="#">Travel Tips</a></li>
-          <li><a href="#">Community</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="https://www.delicious.com.au/travel/international/gallery/100-cities-deserve-place-travel-bucket-list/o4lzlr69">Explore Cities</a></li>
+          <li><a href="https://wouldbewanderer.com/tourism/?gclid=CjwKCAjw9pGjBhB-EiwAa5jl3CRg14o2bqMaA_jSfeI8JnlzaboY6Bji9Mke1HZSntg1whwfoTfPohoC7aAQAvD_BwE">Travel Tips</a></li>
+          <li><a href="https://mystead.com/?gclid=CjwKCAjw9pGjBhB-EiwAa5jl3FWEzY73i4Vu3xwMWlpdT047zwMt8FIRg8KWSQJHpxRtafzGRZANdBoCcVcQAvD_BwE">Community</a></li>
           <li><a href="contactus/contactus.html">Contact Us</a></li>
         </ul>
       </nav>
@@ -215,17 +232,23 @@ width: 600px ;
 
   <section class="hero">
     <h2>Uncover the Wonders of Cities Around the World</h2>
-    <p>Welcome to CityExplorer, your gateway to a global adventure. Discover the unique charm, rich history, and cultural treasures of cities across the globe. Join our community of passionate travelers and explore the world like never before.</p>
+    <p>Welcome to CityExplorer, your gateway to a global adventure. Discover the unique charm, rich history, and cultural treasures of cities across the globe. Join our community of passionate travelers and explore the world like never before.
+      Delve into detailed city profiles, captivating articles, and stunning visuals that transport you to the heart of each destination. Uncover the hidden gems and must-visit landmarks that make each city truly special
+    </p> <br>
+        <marquee behavior="scroll" direction="left">
+        Explore the world's hidden gems and vibrant metropolises while discovering captivating cities!
+  </marquee>
   </section>
 
-  <section class="features">
+<!-- 
+ <section class="features">
     <div class="feature">
       <h3>Immersive Guides</h3>
       <p>Delve into detailed city profiles, captivating articles, and stunning visuals that transport you to the heart of each destination. Uncover the hidden gems and must-visit landmarks that make each city truly special
 
-      </section>
+      </section> -->
 
-      
+  
 
       <section class="features">
         <div class="card-container">
@@ -297,7 +320,7 @@ width: 600px ;
           <h2>Inscrivez-vous à notre newsletter</h2>
           <form>
             <input type="email" placeholder="Entrez votre adresse e-mail">
-            <button type="submit" class="btn">S'inscrire</button>
+            <button type="submit" class="btn" id="notificationButton">S'inscrire</button>
       
           </form>      
         </section>
@@ -305,3 +328,22 @@ width: 600px ;
       </footer>
     
       
+ <script>
+    // Function to display the pop-up notification
+    function showNotification() {
+      // Create the pop-up notification
+      alert("You're subscribed to our Newsletter, thank you !");
+    }
+
+    // Add a click event listener to the button
+    var button = document.getElementById("notificationButton");
+    button.addEventListener("click", showNotification);
+  </script>
+</body>
+</html>
+
+
+
+
+
+
